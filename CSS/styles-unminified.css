@@ -1,0 +1,125 @@
+header, section, footer, aside, nav, main, article, figure {
+	display: block; 
+}
+
+body {margin:0px;}
+
+ul {
+	width:100%;
+	list-style-type:none;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	background-color:#333333;
+}
+
+li {float:left;}
+
+li a {
+	display: block;
+	color: white;
+	font-family: verdana;
+	font-size: 20px;
+	text-decoration:none;
+	padding: 17px;
+}
+
+li a:hover {
+	background-color: rgb(60,60,60);
+	color: #f94848;
+	text-decoration: none;
+}
+
+div.alertbar{
+	background-color:rgba(53,134,53,0.9);
+	width:100%;
+	height:8px;
+}
+
+#registerleft {float:right;}
+
+#frlogo {
+	display: block;
+	width: 65px; 
+	height: 65px; 
+	margin-left: 15px;
+	margin-top: 10px;
+	position: absolute;
+	margin-left: 47vw;
+	border: 2px solid black;
+	padding: 5px;
+	background-color: #333;
+}
+
+.readmoremain {
+	position: absolute;
+	font-size: 20px;
+	font-family: "Times New Roman", verdana, serif;
+	border: 4px solid white;
+	border-radius: 15px;
+	padding: 5px;
+	margin-left: 45vw;
+	background-color: rgb(101, 165, 23);
+	margin-top: 25px;
+}
+
+#container {
+	height: 50px;
+}
+
+.readmoremain a {
+	text-decoration: none;
+	color: white;
+	font-family: "Times New Roman", verdana, serif;
+}
+
+div.footermain {background-color:#333;}
+
+div.newsletter {
+	width: 15vw;
+	margin-left: 20px;
+	margin-botton:5px;
+}
+
+.fa {
+	color: green;
+	padding: 3px 5px;
+	float: left;
+}
+
+@media screen and (max-width: 820px) {
+	#frlogo {
+	margin-left: 52vw;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.readmoremain{
+	margin-left: 37vw;
+	}
+
+	#frlogo {
+	display: none;
+	border: none;
+	}
+	
+	li{width: 100%; height: 50px;}
+
+	#registerleft {float: left; width: 100%;}
+}
+
+@media screen and (max-width: 600px) {
+	.readmoremain{
+	margin-left: 32vw;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.readmoremain{
+	margin-left: 32vw;
+	font-size: 14px;
+	}
+
+	li{width: 100%; height: 35px; margin-left: 30vw;}
+	li a{padding:none;  font-size:12px;}
+}
